@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.inter {
+  font-family: 'Inter';
+}
+
+.header_ft {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.menu_items_ft {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 /* This is only used for content backgrod color */
 .default_bg {
   background-color: rgba(164, 61, 246, 1);
@@ -10,4 +28,11 @@
 .header {
   background-color: rgba(217, 217, 217, 1);
   opacity: 0.5;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
