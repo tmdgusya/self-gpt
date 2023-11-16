@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import ChattingRoom from './routes/Chatting';
+import { mockChattingMessagesForTest } from './mock/ChattingTestData';
 
 interface Menu {
   name: string;
@@ -43,7 +45,7 @@ function App() {
               </div>
           <div id='content' className='w-10/12'>
             { /* content will be placed here, but it will be selected by selected menu item */ }
-            <p>Content</p>
+            <Outlet />
           </div>
         </div>
       </div>
