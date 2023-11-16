@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This is only used for content backgrod color */
+.default_bg {
+  background-color: rgba(164, 61, 246, 1);
+}
+
+.header {
+  background-color: rgba(217, 217, 217, 1);
+  opacity: 0.5;
+}
