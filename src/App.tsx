@@ -40,8 +40,12 @@ function App() {
         <div id='body' className='flex w-full' style={{'height': '94.5%'}}>
           <div id='menu-container' className='flex flex-col w-2/12 border-l-2 border-r-2 border-black menu_items_ft'>
             { /* menu items will be placed here (for-loop)*/}
-            {menus.map((menu, _) => { 
-              return <Link className='flex h-10 justify-center items-center border-t-2 border-black' to={menu.link}>{menu.name}</Link> })}
+            {menus.map((menu, index) => { 
+              if (index === menus.length - 1) {
+                return <Link className='flex h-10 justify-center items-center border-t-2 border-b-2 border-black' to={menu.link}>{menu.name}</Link> 
+              }
+              return <Link className='flex h-10 justify-center items-center border-t-2 border-black' to={menu.link}>{menu.name}</Link> })
+            }
               </div>
           <div id='content' className='w-10/12'>
             { /* content will be placed here, but it will be selected by selected menu item */ }
